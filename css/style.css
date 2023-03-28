@@ -165,7 +165,7 @@ img {
   background-image: var(--bg-gradient), url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .modal-btn {
