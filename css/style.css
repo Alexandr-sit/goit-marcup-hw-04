@@ -201,18 +201,29 @@ img {
   width: calc(25% - 24px);
 }
 
-/* .list-item::before {
+.features-title::before {
   display: block;
-  content:'';
+  content: "";
   height: 112px;
-  background: #F4F4FD;
+  background: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
   background-image: url(../images/antenna.svg);
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-} */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.list-item:nth-child(2) > .features-title:before {
+  background-image: url(../images/clock.svg);
+}
+
+.list-item:nth-child(3) > .features-title:before {
+  background-image: url(../images/diagram.svg);
+}
+
+.list-item:nth-child(4) > .features-title:before {
+  background-image: url(../images/astronaut.svg);
+}
 
 .features-list {
   display: flex;
@@ -334,10 +345,14 @@ background-position: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #404bbf;
+  background-color: var(--IRIS);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.team-soc-link:hover {
+  background-color: var(--OCEAN);
 }
 
 /* =================== SECTION 5 =============== */
@@ -418,6 +433,42 @@ background-position: center;
 .logo-footer-span {
   color: #f4f4fd;
 }
+
+.social-media-item {
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+
+.footer-container {
+  display: flex;
+  gap: 120px;
+}
+
+.footer-wrap-logo {
+
+}
+
+.wrap-social-media {
+    display: flex;
+    flex-wrap: wrap;
+    width: 208px;
+    height: 80px;
+}
+
+.footer-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-soc-title{
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
 
 /* =================== PARTFOLIO =================== */
 .partfolio {
@@ -501,5 +552,9 @@ background-position: center;
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
+}
+
+.social-media-wrap {
+
 }
 /* =================== /PARTFOLIO =================== */
