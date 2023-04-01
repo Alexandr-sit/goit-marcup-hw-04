@@ -189,7 +189,7 @@ img {
 
 .modal-btn:hover,
 .modal-btn:focus {
-  color: var(--OCEAN);
+  background-color: var(--OCEAN);
 }
 
 /* ============= 2 SECTION========= */
@@ -198,7 +198,7 @@ img {
 }
 
 .list-item {
-  width: calc(25% - 24px);
+
 }
 
 .features-title::before {
@@ -554,6 +554,7 @@ img {
 }
 .partfolio-header-border {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .partfolio-item:hover,
@@ -576,6 +577,5 @@ img {
   border-left: 1px solid #e7e9fc;
 }
 
-.social-media-wrap {
-}
+
 /* =================== /PARTFOLIO =================== */
